@@ -1,0 +1,156 @@
+.banner-box__main {
+  margin: 0 auto;
+  padding: 0 150px;
+  background-image: url("/src/assets/img/banner-bg.png");
+  background-repeat: repeat-y;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.banner-box__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 150px; */
+}
+
+.banner-box {
+  max-width: 1278px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  color: #fff;
+}
+
+.banner-box__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.banner-box__text h1 {
+  font-size: 3.5rem;
+  position: relative;
+  line-height: 1.2;
+  /* margin-bottom: 20px; */
+}
+
+.banner-box__text h1 img {
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(30%);
+}
+
+.banner-box__img img {
+  width: 450px;
+  display: block;
+}
+
+.portfolio-btn {
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+.portfolio-btn:hover {
+  color: #222;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-btn:hover::before {
+  height: 100%;
+  width: 100%;
+  color: #222;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.tech-stack {
+  /* margin: 50px 0; */
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.tech-stack__icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 3rem;
+}
+
+.vertical-line {
+  height: 25px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1125px) {
+  .banner-box__main {
+    height: fit-content;
+  }
+  .banner-box__container {
+    padding-top: 150px;
+  }
+
+  .banner-box {
+    flex-direction: column;
+    gap: 0;
+  }
+  .banner-box__img img {
+    width: 250px;
+    display: block;
+  }
+
+  .banner-box__text h1 {
+    font-size: 2.5rem;
+  }
+  .banner-box__text h1 img {
+    bottom: 0px;
+  }
+  .tech-stack {
+    /* margin: 50px 0; */
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .tech-stack__icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .vertical-line {
+    height: 55px;
+    margin: 0 20px;
+  }
+  .portfolio-btn__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
